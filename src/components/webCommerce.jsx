@@ -8,7 +8,7 @@ const Commerce = () => {
   const [filteredCommerce, setFilteredCommerce] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/api/webcommerces/all")
+    fetch("http://localhost:3000/api/webCommerce/all")
       .then((response) => response.json())
       .then((data) => {
         setCommerce(data);
